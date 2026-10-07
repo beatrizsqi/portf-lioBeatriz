@@ -8,9 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -18,8 +16,13 @@
             <li><span><img src="quadrado.png" alt=""></span></li>
         </div>
 
-        <!-- Todos os botões reunidos em uma única lista lado a lado -->
-        <ul>
+        <button class="hamburger-btn" id="hamburger-btn" aria-label="Abrir Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
             <li><a class="nav-btn" href="#about" data-i18n="about">ABOUT ME</a></li>
             <li><a class="nav-btn" href="#skills" data-i18n="skills">SKILLS</a></li>
             <li><a class="nav-btn talk" href="#talk" data-i18n="talk">TALK TO ME</a></li>
@@ -46,13 +49,13 @@
 
     <section class="me">
         <div class="bia">
-            <h1>
-                Beatriz Siqueira
-            </h1>
+            <h1>Beatriz Siqueira</h1>
         </div>
-        <div class="subtitle-box">
+        <div class="space-between">
+            <div class="subtitle-box">
                 <span class="reveal-text">FRONT-END DEVELOPER & CREATIVE DESIGNER</span>
             </div>
+        </div>
     </section>
 
     <script src="script.js"></script>

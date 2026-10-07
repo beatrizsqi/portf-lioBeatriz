@@ -43,3 +43,20 @@ function typeLoop() {
     setTimeout(typeLoop, typeSpeed);
 }
 typeLoop();
+
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navMenu = document.getElementById('nav-menu');
+
+hamburgerBtn.addEventListener('click', () => {
+    hamburgerBtn.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Fechar o menu ao clicar num link de navegação
+document.querySelectorAll('.nav-btn').forEach(link => {
+    link.addEventListener('click', () => {
+        hamburgerBtn.classList.remove('active');
+        navMenu.classList.remove('active');
+    });
+});
+
